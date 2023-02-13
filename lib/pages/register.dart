@@ -33,7 +33,7 @@
 //                 validator: (value) {
 //                   return null;
 //                 },
-//                 onSaved: (value) => _username = value,
+//                 onChanged: (value) => _username = value,
 //               ),
 //               TextFormField(
 //                 keyboardType: TextInputType.emailAddress,
@@ -45,7 +45,7 @@
 //                       ? null
 //                       : 'Invalid email';
 //                 },
-//                 onSaved: (value) => _email = value,
+//                 onChanged: (value) => _email = value,
 //               ),
 //               TextFormField(
 //                 obscureText: true,
@@ -83,7 +83,7 @@
 //                   }
 //                   return null;
 //                 },
-//                 onSaved: (value) => _phoneNumber = value,
+//                 onChanged: (value) => _phoneNumber = value,
 //               ),
 //               MyCustomButton(
 //                   text: 'Register',
@@ -156,7 +156,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   validator: (value) {
                     return null;
                   },
-                  onSaved: (value) => _username = value,
+                  onChanged: (value) => _username = value,
                 ),
                 TextFormField(
                   keyboardType: TextInputType.emailAddress,
@@ -169,7 +169,7 @@ class _RegisterPageState extends State<RegisterPage> {
                         ? null
                         : 'Invalid email';
                   },
-                  onSaved: (value) => _email = value,
+                  onChanged: (value) => _email = value,
                 ),
                 TextFormField(
                   obscureText: true,
@@ -183,7 +183,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     }
                     return null;
                   },
-                  onSaved: (value) => _password = value,
+                  onChanged: (value) => _password = value,
                 ),
                 TextFormField(
                   obscureText: true,
@@ -210,7 +210,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     }
                     return null;
                   },
-                  onSaved: (value) => _phoneNumber = value,
+                  onChanged: (value) => _phoneNumber = value,
                 ),
                 MyCustomButton(
                     text: 'Register',

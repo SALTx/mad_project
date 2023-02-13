@@ -78,7 +78,7 @@ class _ProfilePageState extends State<Profile> {
             ),
             SizedBox(height: 16.0),
             Text(
-              'Cart (${GlobalVars.myProfile.cart.length} items)',
+              'Cart (${getItemCount().toInt()} items)',
               style: TextStyle(
                 fontSize: 20.0,
                 fontWeight: FontWeight.bold,
